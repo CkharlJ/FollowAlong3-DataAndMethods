@@ -10,5 +10,88 @@ package part13;
 // underneath it — is part of the stretch.
 
 public class Stretch {
+    public static void main(String[] args) {
+
+        int x = 5;
+
+        change(x);
+            /* MY GUESS
+            it will print 5
+             */
+        System.out.println(x);
+            /* MY GUESS
+            he will be printed out 10
+             */
+        System.out.println(twice(x));
+            /* MY GUESS
+            it printed out 20
+             */
+        System.out.println(twice(twice(x)));
+
+        greet("Sam", 3);
+
+    }
+
+    static void change(int x) {
+        x = 100;
+    }
+
+    static int twice(int n) {
+        return n * 2;
+    }
+
+
+    // Method 3 - greet
+    static void greet(String who, int times) {
+        for (int i = 0; i < times; i++) {
+                /* MY GUESS
+                it will print out Hi Sam! Hi Sam! Hi Sam!
+                 */
+            System.out.print("Hi " + who + "! ");
+        }
+        System.out.println();
+
+        System.out.println(square(4));
+        System.out.println(square(9));
+
+
+        System.out.println(average(90, 80, 85));
+        System.out.println(average(1, 2, 2));
+
+        System.out.println(rating(5));
+        System.out.println(rating(4));
+        System.out.println(rating(1));
+        System.out.println(rating(9));
+
+    }
+
+
+
+
+    static int square(int n) {
+        return n * n;
+    }
+
+    static double average(int a, int b, int c) {
+        return (a + b + c) / 3.0;
+    }
+
+    static String rating(int stars) {
+        if (stars == 5) {
+            return "Amazing";
+        } else if (stars == 3 || stars == 4) {
+            return "Good";
+        } else if (stars == 1 || stars == 2) {
+            return "Bad";
+        } else {
+            return "Invalid";
+        }
+    }
 
 }
+
+
+
+
+
+
