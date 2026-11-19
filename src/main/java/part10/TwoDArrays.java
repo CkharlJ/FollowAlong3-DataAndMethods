@@ -14,5 +14,25 @@ package part10;
 //    saying in YOUR OWN WORDS what that line does. The README shows an example.
 
 public class TwoDArrays {
-
+    public static void main(String[] args) {
+        // Create a 2D array with 3 rows of cars
+        String[][] cars = {
+                // Store three cars in the first row.
+                {"Camaro", "Corvette", "Silverado"},
+                // Store three cars in the second row.
+                {"Mustang", "Ranger", "F-150"},
+                // Store three cars in the third row.
+                {"Ferrari", "Lambo", "Tesla"}
+        };
+        // Start a loop to go through each row.
+        for (int i = 0; i < cars.length; i++) {
+            // Move to a new line for each row.
+            System.out.println();
+            // Start a loop to go through each car in the row.
+            for (int j = 0; j < cars[i].length; j++) {
+                // Print each car with a space after it.
+                System.out.print(cars[i][j] + " ");
+            }
+        }
+    }
 }
