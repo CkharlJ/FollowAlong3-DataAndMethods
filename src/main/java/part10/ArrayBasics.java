@@ -14,5 +14,26 @@ package part10;
 //    saying in YOUR OWN WORDS what that line does. The README shows an example.
 
 public class ArrayBasics {
-
+    public static void main(String[] args) {
+        // Create a String array that can store 3 cars.
+        String[] cars = new String[3];
+        // Store Camaro in the first position.
+        cars[0] = "Camaro";
+        // Store Corvette in the second position.
+        cars[1] = "Corvette";
+        // Store Tesla in the third position.
+        cars[2] = "Tesla";
+        // Print the first car.
+        System.out.println(cars[0]);
+        // Print the second car.
+        System.out.println(cars[1]);
+        // Print the third car.
+        System.out.println(cars[2]);
+        // Loop through all the cars in the array.
+        for (int i = 0; i < cars.length; i++) {
+            // Print the car at the current position.
+            System.out.println(cars[i]);
+        }
+    }
 }
+
